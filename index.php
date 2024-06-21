@@ -1,28 +1,8 @@
 <?php
-class Movie
-{
-    public $title;
-    public $year;
-    public $director;
 
-    public function infoMovie()
-    {
-        return "$this->title $this->year $this->director";
-    }
+include __DIR__ . "/models/Movie.php";
 
-    public function __construct($title, $year, $director)
-    {
-        $this->title = $title;
-        $this->year = $year;
-        $this->director = $director;
-    }
-}
-
-$movies = [
-    $firstMovie = new Movie("Minority Report", "2000", "Fabio"),
-    $secondMovie = new Movie("Shutter Island", "2000", "Fabio"),
-    $thirdMovie = new Movie("The Lighthouse", "2000", "Fabio"),
-];
+include __DIR__ . "/store.php";
 
 ?>
 
